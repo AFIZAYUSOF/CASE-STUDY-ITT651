@@ -1,0 +1,24 @@
+ER4 Router> enable
+ER4 Router# configure terminal
+
+ER4 Router(config)# interface Loopback100
+ER4 Router(config-if)# ip address 10.10.100.1 255.255.255.0
+ER4 Router(config-if)# exit
+
+ER4 Router(config)# interface Loopback101
+ER4 Router(config-if)# ip address 10.10.101.1 255.255.255.0
+ER4 Router(config-if)# exit
+
+ER4 Router(config)# interface Loopback102
+ER4 Router(config-if)# ip address 10.10.102.1 255.255.255.0
+ER4 Router(config-if)# exit
+
+ER4 Router(config)# interface Serial0/0/0
+ER4 Router(config-if)# ip address 172.16.1.6 255.255.255.252
+ER4 Router(config-if)# exit
+
+ER4 Router(config)# interface FastEthernet0/1/0
+ER4 Router(config-if)# ip address 172.20.10.1 255.255.255.0
+ER4 Router(config-if)# exit
+
+ER4 Router(config)# exit
